@@ -8,7 +8,7 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,15 +22,14 @@
 
     <nav class="nav" id="nav">
       <a href="#sobre">Sobre</a>
-      <a href="#areas">Áreas de Atuação</a>
-      <a href="#compromisso">Compromisso</a>
+      <a href="#areas">Áreas de atuação</a>
+      <a href="#como-funciona">Como funciona</a>
       <a href="#videos">Vídeos</a>
       <a href="#contato">Contato</a>
     </nav>
 
-    <a class="btn btn--whatsapp header__cta" href="https://wa.me/5535988466324?text=Ol%C3%A1%2C%20Dra.%20Vanessa!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.6-1.4 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.7.7 1.8.1.1.1.3 0 .4-.4.8-.8 1-1 1.2-.1.1-.2.3-.1.5.3.7 1 1.4 1.6 2 .7.7 1.3 1 1.9 1.3.2.1.4.1.5-.1.2-.3.6-.9.8-1.2.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.9.3.1.5.2.5.4.1.2.1.7-.1 1.2z"/></svg>
-      Agendar Consulta
+    <a class="btn btn--primary header__cta" href="https://wa.me/5535988466324?text=Ol%C3%A1%2C%20Dra.%20Vanessa!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+      Falar no WhatsApp
     </a>
 
     <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
@@ -41,11 +40,10 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero__bg" aria-hidden="true"></div>
   <div class="container hero__inner">
     <div class="hero__content">
-      <span class="eyebrow eyebrow--tag"><em>01</em> OAB/MG 185101 · Cambuí - MG</span>
-      <h1>Mais que advogar, <span>é sobre cuidar.</span></h1>
+      <span class="kicker kicker--light">Advocacia em Cambuí, MG</span>
+      <h1>Mais que advogar, é sobre cuidar.</h1>
       <p class="hero__lead">
         Te ajudo a entender seus direitos sem complicação — atendimento próximo em
         Direito de Família, Consumidor, Previdenciário (INSS), Cível e Imobiliário.
@@ -55,18 +53,37 @@
         <a class="btn btn--outline-light" href="#areas">Ver áreas de atuação</a>
       </div>
       <ul class="hero__trust">
-        <li>Atendimento Seg. a Sex. · 8h às 18h</li>
-        <li>Cambuí e região</li>
+        <li>Segunda a sexta, 8h às 18h</li>
+        <li>Atendimento em Cambuí e região</li>
       </ul>
     </div>
 
-    <div class="hero__visual">
-      <div class="hero__photo">
-        <img src="img/perfil.jpg" alt="Dra. Vanessa Eliza, advogada em Cambuí - MG">
-      </div>
-      <div class="hero__photo-tag">
-        <strong>Vanessa Eliza</strong>
-        <small>Advogada · OAB/MG 185101</small>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="phone">
+        <div class="phone__bar">
+          <img class="phone__avatar" src="img/perfil.jpg" alt="">
+          <div class="phone__who">
+            <strong>Vanessa Eliza</strong>
+            <span><i class="status-dot"></i>online</span>
+          </div>
+        </div>
+        <div class="phone__chat">
+          <div class="bubble bubble--in">
+            Oi, Dra. Vanessa! Posso te perguntar uma coisa sobre pensão alimentícia?
+            <time>08:41</time>
+          </div>
+          <div class="bubble bubble--out">
+            Oi! Pode sim, me conta o que está acontecendo que te explico os próximos passos.
+            <time>08:42 <svg class="check" viewBox="0 0 16 11"><path d="M1 5.5l3 3L11 1M5 5.5l3 3L15 1"/></svg></time>
+          </div>
+          <div class="bubble bubble--in">
+            Posso te mandar os documentos agora?
+            <time>08:43</time>
+          </div>
+          <div class="bubble bubble--out bubble--typing" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -75,38 +92,36 @@
 <!-- SOBRE -->
 <section class="sobre" id="sobre">
   <div class="container sobre__inner">
-    <div class="sobre__content">
-      <span class="eyebrow"><em>02</em> Sobre a advogada</span>
+    <div class="sobre__text">
+      <span class="kicker">Sobre a advogada</span>
       <h2>Dra. Vanessa Eliza da Silva</h2>
       <p>
         Advogada atuante em Cambuí e região, com atendimento próximo e atenção individual
         a cada cliente. A atuação é pautada pela escuta atenta, clareza nas orientações e
-        comprometimento com o resultado — do primeiro contato até a solução do seu caso.
+        dedicação em cada etapa do processo — do primeiro contato ao acompanhamento do seu caso.
       </p>
       <p>
         O escritório também presta serviços de correspondência jurídica, como
         acompanhamento em audiências, diligências, cartórios e prefeitura, para
         advogados e partes de outras comarcas.
       </p>
-      <div class="sobre__badges">
-        <span class="badge">OAB/MG 185101</span>
-        <span class="badge">Atendimento humanizado</span>
-        <span class="badge">Cambuí - MG</span>
-      </div>
+      <ul class="credentials">
+        <li>OAB/MG 185101</li>
+        <li>Cambuí - MG</li>
+      </ul>
     </div>
-    <div class="sobre__quote">
-      <svg viewBox="0 0 24 24" class="sobre__quote-mark"><path d="M7 7h4v6l-3 6H4l3-6V7zm9 0h4v6l-3 6h-4l3-6V7z"/></svg>
+    <blockquote class="pull-quote">
       <p>Você não é apenas mais um processo. Você é único — e é assim que trato cada caso.</p>
-      <span>— Dra. Vanessa Eliza</span>
-    </div>
+      <cite>Dra. Vanessa Eliza</cite>
+    </blockquote>
   </div>
 </section>
 
 <!-- QUOTE BANNER -->
-<section class="banner" style="background-image:url('img/post-quote.jpg')">
+<section class="banner" style="background-image:url('img/post-quote-banner.jpg')">
   <div class="banner__overlay"></div>
   <div class="container banner__inner">
-    <p class="banner__quote">“O Direito não transforma apenas situações, <span>transforma vidas.</span>”</p>
+    <p class="banner__quote">“O Direito não transforma apenas situações, transforma vidas.”</p>
     <p class="banner__sub">Estou aqui para caminhar ao seu lado e lutar pelos seus direitos.</p>
   </div>
 </section>
@@ -115,100 +130,111 @@
 <section class="areas" id="areas">
   <div class="container">
     <div class="section__head">
-      <span class="eyebrow"><em>03</em> Áreas de atuação</span>
-      <h2>Como podemos ajudar você</h2>
+      <span class="kicker">Áreas de atuação</span>
+      <h2>Como posso ajudar você</h2>
       <p>Orientação jurídica clara e atuação dedicada nas seguintes áreas.</p>
     </div>
 
-    <div class="areas__grid">
-      <div class="card">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm-7 9c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="5" cy="7" r="2.3"/><path d="M2.5 20.2c.2-2.3 1.8-4.2 4-4.9"/><circle cx="19" cy="7" r="2.3"/><path d="M21.5 20.2c-.2-2.3-1.8-4.2-4-4.9"/></svg>
+    <ul class="index-list">
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm-7 9c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="5" cy="7" r="2.3"/><path d="M2.5 20.2c.2-2.3 1.8-4.2 4-4.9"/><circle cx="19" cy="7" r="2.3"/><path d="M21.5 20.2c-.2-2.3-1.8-4.2-4-4.9"/></svg>
+        <div>
+          <h3>Família</h3>
+          <p>Soluções jurídicas para questões familiares com sensibilidade e responsabilidade.</p>
         </div>
-        <h3>Família</h3>
-        <p>Soluções jurídicas para questões familiares com sensibilidade e responsabilidade.</p>
-      </div>
-
-      <div class="card">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24"><path d="M3 9h18M3 9l2-5h14l2 5M3 9v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9"/><path d="M9 13h6"/></svg>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M3 9h18M3 9l2-5h14l2 5M3 9v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9"/><path d="M9 13h6"/></svg>
+        <div>
+          <h3>Consumidor</h3>
+          <p>Defesa dos seus direitos nas relações de consumo, com informação e estratégia.</p>
         </div>
-        <h3>Consumidor</h3>
-        <p>Defesa dos seus direitos nas relações de consumo, com informação e estratégia.</p>
-      </div>
-
-      <div class="card">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M13 9h5M13 12h5M7 15h10"/></svg>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M13 9h5M13 12h5M7 15h10"/></svg>
+        <div>
+          <h3>INSS / Previdenciário</h3>
+          <p>Aposentadorias, auxílios e benefícios com o suporte que você precisa.</p>
         </div>
-        <h3>INSS / Previdenciário</h3>
-        <p>Aposentadorias, auxílios e benefícios com o suporte que você precisa.</p>
-      </div>
-
-      <div class="card">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24"><path d="M12 3v3M4 9l8-3 8 3M4 9l3 6-3 1.2V9zM20 9l-3 6 3 1.2V9zM4 9h16M9 9v10M15 9v10M4 19h16"/></svg>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M12 3v3M4 9l8-3 8 3M4 9l3 6-3 1.2V9zM20 9l-3 6 3 1.2V9zM4 9h16M9 9v10M15 9v10M4 19h16"/></svg>
+        <div>
+          <h3>Cível</h3>
+          <p>Atuação em diversas demandas cíveis para proteger seus direitos.</p>
         </div>
-        <h3>Cível</h3>
-        <p>Atuação em diversas demandas cíveis para proteger seus direitos.</p>
-      </div>
-
-      <div class="card">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+        <div>
+          <h3>Imobiliário</h3>
+          <p>Assessoria completa em questões imobiliárias com segurança jurídica.</p>
         </div>
-        <h3>Imobiliário</h3>
-        <p>Assessoria completa em questões imobiliárias com segurança jurídica.</p>
-      </div>
-
-      <div class="card">
-        <div class="card__icon">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <div>
+          <h3>Correspondência jurídica</h3>
+          <p>Audiências, diligências, cartórios e prefeitura em Cambuí e região.</p>
         </div>
-        <h3>Correspondência Jurídica</h3>
-        <p>Audiências, diligências, cartórios e prefeitura em Cambuí e região.</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 
-<!-- COMPROMISSO / DIFERENCIAIS -->
+<!-- COMO FUNCIONA -->
+<section class="processo" id="como-funciona">
+  <div class="container">
+    <div class="section__head">
+      <span class="kicker">Primeiro contato</span>
+      <h2>Como funciona o primeiro atendimento</h2>
+    </div>
+    <ol class="steps">
+      <li>
+        <span class="steps__num">1</span>
+        <h3>Chame no WhatsApp</h3>
+        <p>Conte, em poucas palavras, o que está acontecendo.</p>
+      </li>
+      <li>
+        <span class="steps__num">2</span>
+        <h3>Converse com a Dra. Vanessa</h3>
+        <p>Você recebe uma orientação inicial e entende os caminhos possíveis.</p>
+      </li>
+      <li>
+        <span class="steps__num">3</span>
+        <h3>Agende sua consulta</h3>
+        <p>Marcamos um horário, presencial ou por chamada, para cuidar do seu caso com calma.</p>
+      </li>
+    </ol>
+    <a class="btn btn--primary" href="https://wa.me/5535988466324?text=Ol%C3%A1%2C%20Dra.%20Vanessa!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Começar pelo WhatsApp</a>
+  </div>
+</section>
+
+<!-- COMPROMISSO -->
 <section class="compromisso" id="compromisso">
   <div class="container">
     <div class="section__head section__head--light">
-      <span class="eyebrow eyebrow--light"><em>04</em> Meu compromisso</span>
-      <h2>Mais que advogar, <span>é sobre cuidar.</span></h2>
+      <span class="kicker kicker--light">Meu compromisso</span>
+      <h2>Princípios que guiam cada caso</h2>
     </div>
-    <div class="compromisso__grid">
-      <div class="pilar">
-        <div class="pilar__icon">
-          <svg viewBox="0 0 24 24"><path d="M11 13l-2.5-2.5a2 2 0 0 0-2.8 0L3 13.2M13 13l2.5-2.5a2 2 0 0 1 2.8 0L21 13.2M7 13l2 2.5h6L17 13"/><path d="M9.5 15.5L8 20h8l-1.5-4.5"/></svg>
-        </div>
-        <h3>Atendimento Humanizado</h3>
-        <p>Você não é apenas mais um processo. Você é único.</p>
+    <dl class="principles">
+      <div>
+        <dt>Atendimento humanizado</dt>
+        <dd>Você não é apenas mais um processo. Você é único.</dd>
       </div>
-      <div class="pilar">
-        <div class="pilar__icon">
-          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z"/><path d="M12 8v4M12 15h.01"/></svg>
-        </div>
-        <h3>Transparência</h3>
-        <p>Explicações claras e verdadeiras em cada etapa.</p>
+      <div>
+        <dt>Transparência</dt>
+        <dd>Explicações claras e verdadeiras em cada etapa.</dd>
       </div>
-      <div class="pilar">
-        <div class="pilar__icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6"/><path d="M19 5l2-2"/></svg>
-        </div>
-        <h3>Estratégia e Dedicação</h3>
-        <p>Atuação técnica voltada à melhor estratégia jurídica para cada situação.</p>
+      <div>
+        <dt>Estratégia e dedicação</dt>
+        <dd>Atuação técnica voltada à melhor estratégia jurídica para cada situação.</dd>
       </div>
-      <div class="pilar">
-        <div class="pilar__icon">
-          <svg viewBox="0 0 24 24"><path d="M12 3v3M12 6l-7 2v5c0 4 3 6.5 7 8 4-1.5 7-4 7-8V8l-7-2z"/><path d="M5 8l7-2 7 2M12 11v4"/></svg>
-        </div>
-        <h3>Ética e Responsabilidade</h3>
-        <p>Atuação com seriedade e compromisso com a verdade e a justiça.</p>
+      <div>
+        <dt>Ética e responsabilidade</dt>
+        <dd>Atuação com seriedade e compromisso com a verdade e a justiça.</dd>
       </div>
-    </div>
+    </dl>
   </div>
 </section>
 
@@ -216,7 +242,7 @@
 <section class="videos" id="videos">
   <div class="container">
     <div class="section__head">
-      <span class="eyebrow"><em>05</em> Conteúdo em vídeo</span>
+      <span class="kicker">Conteúdo em vídeo</span>
       <h2>Direito explicado de forma simples</h2>
       <p>Vídeos direto do Instagram, com orientações rápidas sobre seus direitos.</p>
     </div>
@@ -234,7 +260,6 @@
       </div>
       <div class="reel reel--cta">
         <div class="reel__cta-inner">
-          <svg viewBox="0 0 24 24" class="reel__icon"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1"/></svg>
           <strong>Mais vídeos no Instagram</strong>
           <span>@vanessae.adv</span>
           <a class="btn btn--outline-light" href="https://www.instagram.com/vanessae.adv/" target="_blank" rel="noopener">Seguir perfil</a>
@@ -244,34 +269,11 @@
   </div>
 </section>
 
-<!-- INSTAGRAM FEED -->
-<section class="instagram">
-  <div class="container">
-    <div class="section__head">
-      <span class="eyebrow"><em>06</em> Instagram</span>
-      <h2>Acompanhe @vanessae.adv</h2>
-      <p>Conteúdo sobre direitos, bastidores e orientações jurídicas toda semana.</p>
-    </div>
-    <div class="instagram__grid">
-      <a class="instagram__item" href="https://www.instagram.com/vanessae.adv/" target="_blank" rel="noopener">
-        <img src="img/post-boasvindo.jpg" alt="Post do Instagram @vanessae.adv">
-      </a>
-      <a class="instagram__item" href="https://www.instagram.com/vanessae.adv/" target="_blank" rel="noopener">
-        <img src="img/post-compromisso.jpg" alt="Post do Instagram @vanessae.adv">
-      </a>
-      <a class="instagram__item instagram__item--cta" href="https://www.instagram.com/vanessae.adv/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1"/></svg>
-        <strong>Seguir @vanessae.adv</strong>
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- CONTATO -->
 <section class="contato" id="contato">
   <div class="container contato__inner">
     <div class="contato__info">
-      <span class="eyebrow"><em>07</em> Contato</span>
+      <span class="kicker">Contato</span>
       <h2>Vamos conversar sobre o seu caso</h2>
       <p>Entre em contato pelo WhatsApp, telefone ou e-mail. Será um prazer atender você.</p>
 
@@ -283,7 +285,7 @@
         <li>
           <span class="contato__label">WhatsApp</span>
           <a href="https://wa.me/5535988466324" target="_blank" rel="noopener">(35) 98846-6324</a>
-          ·
+          ou
           <a href="https://wa.me/5535991745948" target="_blank" rel="noopener">(35) 99174-5948</a>
         </li>
         <li>
@@ -305,7 +307,6 @@
       </ul>
 
       <a class="btn btn--whatsapp" href="https://wa.me/5535988466324?text=Ol%C3%A1%2C%20Dra.%20Vanessa!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.6-1.4 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.7.7 1.8.1.1.1.3 0 .4-.4.8-.8 1-1 1.2-.1.1-.2.3-.1.5.3.7 1 1.4 1.6 2 .7.7 1.3 1 1.9 1.3.2.1.4.1.5-.1.2-.3.6-.9.8-1.2.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.9.3.1.5.2.5.4.1.2.1.7-.1 1.2z"/></svg>
         Agendar consulta pelo WhatsApp
       </a>
     </div>
@@ -324,10 +325,8 @@
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer__inner">
-    <div class="brand brand--footer">
-      <img src="img/logo_vanessa_eliza_sem_fundo.png" alt="Vanessa Eliza Advocacia" class="brand__logo brand__logo--footer">
-    </div>
-    <p>OAB/MG 185101 · R. Cel. Lambert, 241A, Centro, Cambuí - MG</p>
+    <img src="img/logo_vanessa_eliza_sem_fundo.png" alt="Vanessa Eliza Advocacia" class="brand__logo brand__logo--footer">
+    <p>OAB/MG 185101 — R. Cel. Lambert, 241A, Centro, Cambuí - MG</p>
     <p class="footer__copy">© <span id="ano"></span> Vanessa Eliza da Silva Advocacia. Todos os direitos reservados.</p>
   </div>
 </footer>
