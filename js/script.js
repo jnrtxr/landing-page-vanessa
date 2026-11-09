@@ -16,7 +16,17 @@ function easeInOutCubic(t) {
   return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
 
+let scrollAnimFrame = null;
+
+function cancelSmoothScroll() {
+  if (scrollAnimFrame) {
+    cancelAnimationFrame(scrollAnimFrame);
+    scrollAnimFrame = null;
+  }
+}
+
 function smoothScrollTo(targetY, duration = 700) {
+  cancelSmoothScroll();
   const startY = window.scrollY;
   const diff = targetY - startY;
   if (Math.abs(diff) < 2) {
@@ -27,10 +37,15 @@ function smoothScrollTo(targetY, duration = 700) {
   function step(now) {
     const progress = Math.min((now - start) / duration, 1);
     window.scrollTo(0, startY + diff * easeInOutCubic(progress));
-    if (progress < 1) requestAnimationFrame(step);
+    scrollAnimFrame = progress < 1 ? requestAnimationFrame(step) : null;
   }
-  requestAnimationFrame(step);
+  scrollAnimFrame = requestAnimationFrame(step);
 }
+
+/* If the visitor scrolls by hand mid-animation, stop overriding their input. */
+['wheel', 'touchstart'].forEach(evt => {
+  window.addEventListener(evt, cancelSmoothScroll, { passive: true });
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
